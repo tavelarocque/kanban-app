@@ -1,5 +1,8 @@
 # Kanban Board
 
+## Live Demo
+[View Live](https://kanban-app-rm7v.vercel.app)
+
 A full-stack Kanban board with drag-and-drop, built with React + Vite (frontend) and Node.js + Express (backend).
 
 ## Project Structure
