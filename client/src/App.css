@@ -1,0 +1,53 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 24px;
+  gap: 24px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.app-title {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: var(--accent);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--danger-dim);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 13px;
+}
+
+.error-dismiss {
+  background: none;
+  color: var(--danger);
+  font-size: 14px;
+  padding: 0 4px;
+}

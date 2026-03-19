@@ -1,0 +1,49 @@
+/* ── Reset & base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:           #0f1117;
+  --surface:      #181c25;
+  --surface-2:    #1f2432;
+  --border:       #2a3044;
+  --border-hover: #3d4d6e;
+  --text:         #e2e8f0;
+  --text-muted:   #6b7a99;
+  --accent:       #5c7cfa;
+  --accent-dim:   #1e2a4a;
+  --danger:       #f56565;
+  --danger-dim:   #3b1c1c;
+
+  --tag-dev:      #38bdf8;
+  --tag-design:   #a78bfa;
+  --tag-docs:     #34d399;
+  --tag-bug:      #fb923c;
+
+  --radius:       8px;
+  --font:         'DM Mono', monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select {
+  font-family: var(--font);
+  font-size: 14px;
+  outline: none;
+}
